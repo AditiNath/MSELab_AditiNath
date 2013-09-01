@@ -1,0 +1,17 @@
+#import<Foundation/Foundation.h>
+
+@interface Employee: NSObject
+{
+	NSString* empname;	
+	NSString* empdept;		
+	int empid;
+}
+
+@property int empid;
+@property (assign) NSString* empname;
+@property (assign) NSString* empdept;
+
+//-(void)addString:(NSString*)astring andArg:(int)nid andArg:(NSString*)ndept;
+-(void)print;
+
+@end

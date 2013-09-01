@@ -1,0 +1,17 @@
+#import<Foundation/Foundation.h>
+#import "C.h"
+
+int main(int argc,const char *argv[])
+{
+	Employee *x = [[Employee alloc]init];
+
+	/*[x addStringValue:nam andArg:1234 andArg:dept];*/
+	[x setEmpid:666];
+	[x setEmpname:@"Aditi"];	//method calls
+	[x setEmpdept:@"ISE"];
+	[x print];
+
+	[x release];
+
+	return 0;
+}

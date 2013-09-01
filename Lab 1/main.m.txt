@@ -1,0 +1,13 @@
+#import <Foundation/Foundation.h>
+#import "A.h"
+
+int main(int argc,const char*argv[])
+{
+	print *x=[[print alloc]init];
+
+	[x addString:"Hello, GitHub!"];
+
+	[x print];
+	[x release];
+	return 0;
+}

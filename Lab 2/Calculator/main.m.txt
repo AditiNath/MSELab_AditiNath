@@ -1,0 +1,47 @@
+#import<Foundation/Foundation.h>
+#import "B.h"
+
+int main(int argc,const char *argv[])
+{
+	
+	Calculate *x = [[Calculate alloc]init];
+	int a,b,c,d;
+	do
+{
+	NSLog(@"Enter number 1:\n");        
+	scanf("%d",&a);
+	NSLog(@"Enter number 2:\n");        
+	scanf("%d",&b);
+	[x setNum1:a];
+	[x setNum2:b];
+	NSLog(@"1.Add\n");        
+	NSLog(@"2.Sub\n");  
+	NSLog(@"3.Mul\n");  
+	NSLog(@"4.Div\n");  
+	NSLog(@"Enter choice\n");  
+	scanf("%d",&c);
+	switch(c)
+	case 1:
+	[x Add];
+	break;
+	case 2:
+	[x Sub];
+	break;
+	case 3:
+	[x Mul];
+	break;
+	case 4:
+	[x Div];
+	break;
+	default:
+	break;
+	}
+	NSLog(@"Enter 1 to continue, else 0 to exit\n");
+	scanf("%d",&d);
+}
+	while(d==1);
+
+	[x release];
+
+	return 0;
+}

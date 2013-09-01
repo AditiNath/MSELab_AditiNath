@@ -1,0 +1,14 @@
+#import<Foundation/Foundation.h>
+
+@interface Calculate: NSObject
+{
+	int num1;		
+	int num2;		//2 numbers are data members
+}
+-(void)setNum1:(int)x;
+-(void)setNum2:(int)y;
+-(void)Add;
+-(void)Sub;
+-(void)Mul;
+-(void)Div;
+@end
